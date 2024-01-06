@@ -6,7 +6,7 @@
     "start": "next dev",
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export && touch ./out/.nojekyll",
+    "export": "next build && next export && touch ./out/.nojekyll  && echo 'www.oenginoz.com' > ./out/CNAME",
     "postbuild": "npm run sitemap && npm run rss",
     "sitemap": "cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-sitemap.mjs",
     "rss": "cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs",
