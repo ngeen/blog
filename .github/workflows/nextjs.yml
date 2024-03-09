@@ -50,6 +50,8 @@ jobs:
           fi
       - name: Corepack Enable
         run: corepack enable
+      - run: |
+            ls ${{github.workspace}}
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
